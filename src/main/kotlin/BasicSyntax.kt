@@ -1,4 +1,5 @@
 import java.lang.Integer.parseInt
+import java.util.*
 
 //fun sum(a:Int, b:Int): Int {
 //    return a+b
@@ -60,3 +61,42 @@ fun printProduct(arg1: String, arg2: String) {
 // 타입 검사와 자동 변환 사용
 //fun getStringLength(obj: Any): Int? = if( obj is String) obj.length else null
 fun getStringLength(obj: Any): Int? = if(obj is String && obj.length > 0) obj.length else null
+
+// for 루프 사용
+fun useForLoop() {
+    val items = listOf("apple", "banana", "kiwi")
+    for(item in items) {
+        println(item)
+    }
+}
+
+// while 루프 사용
+fun useWhileLoop() {
+    val items = listOf("apple", "banana", "kiwi")
+    var index = 0
+    while(index < items.size) {
+        println("item at $index is ${items[index]}")
+        index++
+    }
+}
+
+// when 식 사용
+fun describe(obj: Any): String =
+    when(obj) {
+        1 ->            "One"
+        "Hello" ->      "Greeting"
+        is Long ->      "Long"
+        !is String ->   "Not a String"
+        else ->         "Unknown"
+    }
+
+// 범위 사용
+fun useScope() {
+    val x = 11
+    val y = 10
+    if(x in 1..y) {
+        println("fits in range")
+    }else {
+        println("not fits")
+    }
+}
