@@ -83,17 +83,18 @@ fun useWhileLoop() {
 // when 식 사용
 fun describe(obj: Any): String =
     when(obj) {
-        1 ->            "One"
-        "Hello" ->      "Greeting"
-        is Long ->      "Long"
-        !is String ->   "Not a String"
-        else ->         "Unknown"
+        1           ->  "One"
+        "Hello"     ->  "Greeting"
+        is Long     ->  "Long"
+        !is String  ->  "Not a String"
+        else        ->  "Unknown"
     }
 
 // 범위 사용
 fun useScope() {
     val x = 11
     val y = 10
+
     if(x in 1..y) {
         println("fits in range")
     }else {
