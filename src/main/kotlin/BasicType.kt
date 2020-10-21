@@ -7,3 +7,18 @@ fun test() {
     println("a === b: ${a === b}")
     println("a == b : ${a == b}")
 }
+
+// 숫자 리터럴에 밑줄
+fun numberLiteralUnderBar() {
+    val oneMillion = 1_000_000
+    val creditCardNumber = 1234_5678_9012_3456L
+    val socialSecurityNumber = 999_99_9999L
+    val hexBytes = 0xFF_EC_DE_5E
+    val byte = 0b11010010_01101001_10010100_10010010
+
+    println(oneMillion)
+    println(creditCardNumber)
+    println(socialSecurityNumber)
+    println(hexBytes)
+    println(byte)
+}

@@ -36,4 +36,10 @@ fun doLazyProperty() {
     println(p)
 }
 
+// lambda
+public fun lambdaFun() {
+    val list = listOf<Int>(1,2,3,4,5)
 
+    val list2 = list.filter { it % 2 == 0 }.map { it}
+    println(list2)
+}
