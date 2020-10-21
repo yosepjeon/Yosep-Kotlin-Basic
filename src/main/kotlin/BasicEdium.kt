@@ -28,4 +28,12 @@ fun searchMap() {
     }
 }
 
+// 지연(lazy) 프로퍼티
+fun doLazyProperty() {
+    val p: String by lazy {
+        "a"
+    }
+    println(p)
+}
+
 

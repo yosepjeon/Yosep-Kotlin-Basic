@@ -101,3 +101,14 @@ fun useScope() {
         println("not fits")
     }
 }
+
+// null 가능 Boolean 사용
+fun fun1() {
+    val b:Boolean? = true
+
+    if(b == true) {
+
+    }else {
+        // b는 false or null
+    }
+}
